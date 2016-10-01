@@ -1,10 +1,23 @@
+---
+title: "New Coder Job Interest and Age" 
+output: html_document 
+---
+
+```{r message=FALSE, warning=FALSE, echo=FALSE}
+require("jsonlite")
+require("RCurl")
+require("dyplr")
+require("tidyr")
+require("ggplot2")
+require("ggthemes") 
+
+```
 ####**Job Interest and Age of New Coders**
 
 These graphs examine the relationship between the job role interests of new coders against their age. In the scatterplot, new coders are also grouped by their desired company size/type. 
 
 **Bar Graph**
-![]( New-Coder-Survey-Data-Visualizations/barplot_jobroleinterest.png "Description goes here")
-
+![](/Users/Janel/Dropbox/DataVisualization/DV_Rproject2/02\ Data\ Wrangling/barplot_jobroleinterest.png) 
 
 **Scatterplot**
 ![](/Users/Janel/Dropbox/DataVisualization/DV_Rproject2/02\ Data\ Wrangling/JobRoleInterest_Scatter.png)
@@ -52,3 +65,4 @@ df %>% dplyr::select(AGE,JOBROLEINTEREST, JOBPREF)
 
 **Scatterplot**: The following ggplot layer was piped to the dataframe:
 ```ggplot(aes(AGE, count, color=JOBROLEINTEREST))  + theme(legend.title = element_text( size = 8)) + scale_color_discrete(name="Job Role Interest")+ geom_point(alpha = 0.7, stat = "identity", position = position_jitter(width=0.5, height= 0.5))+ labs(title='Job Interest of New Coders by Age') + labs(x="Age of New Coder", y= "Count") +facet_wrap(~JOBPREF) + scale_x_discrete(breaks = c(15,25,35,45,55,65))```
+

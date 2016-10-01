@@ -37,7 +37,7 @@ df=read.csv("NewCoders2.reformatted.csv ")
 ```
 
 **Step 3:** 
-Call dplyr's ```select()``` function to remove unwanted columns from dataframe: 
+Call dplyr's ```select()``` function to remove unwanted columns from data frame: 
 ```
 df %>% dplyr::select(AGE,JOBROLEINTEREST, JOBPREF)
 ```
@@ -49,7 +49,7 @@ df %>% dplyr::select(AGE,JOBROLEINTEREST, JOBPREF)
 ```
 
 
-**Step 5**: Call dplyr's ```group_by()``` function to group dataframe by AGE, JOBROLEINTEREST, and JOBPREF attributes:
+**Step 5**: Call dplyr's ```group_by()``` function to group data frame by AGE, JOBROLEINTEREST, and JOBPREF attributes:
 
 ```
  %>% dplyr::group_by(AGE, JOBROLEINTEREST, JOBPREF)

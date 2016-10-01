@@ -1,5 +1,5 @@
 # New-Coder-Survey-Data-Visualizations
-Data Visualization derived from Kaggle's New Coder Survey dataset.
+These graphs are derived from Kaggle's New Coder Survey dataset.
 More info may be found here: https://www.kaggle.com/freecodecamp/2016-new-coder-survey- 
 
 ####**Job Interest and Age of New Coders**

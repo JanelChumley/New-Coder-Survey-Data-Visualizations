@@ -14,7 +14,8 @@ These data visualizations examine the relationship between the job role interest
 
 There are signficantly more coders between the ages of 20 and 35 who want to become Full-Stack Web Developers relative to their middle to late-aged counterparts. Also, the scatterplot reveals that new millenial coders are more likely to desire employment at a medium-size company or start-up. There appears to be significantly more young coders who desire a career in Front-End Web Development as well. The remaining job role interest categories have a relatively unbiased age distribution.
 
-##**The following steps were taken to produce these data visualization
+###**The following steps were taken to produce these data visualization**
+
 **Step 1:** Import the libraries:
 
 ```{r message=FALSE, warning=FALSE, echo=FALSE}
@@ -28,7 +29,6 @@ require("ggthemes")
 ```{r message=FALSE, warning=FALSE}
 df=read.csv("NewCoders2.reformatted.csv ")
 ```
-###**Data Wrangling Steps**
 
 **Step 3:** 
 Called dplyr's ```select()``` function to remove unwanted columns from dataframe. 
@@ -67,3 +67,6 @@ df %>% dplyr::select(AGE,JOBROLEINTEREST, JOBPREF)
 **Scatterplot**: The following ggplot layer was piped to the dataframe:
 ```ggplot(aes(AGE, count, color=JOBROLEINTEREST))  + theme(legend.title = element_text( size = 8)) + scale_color_discrete(name="Job Role Interest")+ geom_point(alpha = 0.7, stat = "identity", position = position_jitter(width=0.5, height= 0.5))+ labs(title='Job Interest of New Coders by Age') + labs(x="Age of New Coder", y= "Count") +facet_wrap(~JOBPREF) + scale_x_discrete(breaks = c(15,25,35,45,55,65))```
 
+
+Source: Kaggle's New Coder Survey dataset
+https://www.kaggle.com/freecodecamp/2016-new-coder-survey- 

@@ -17,7 +17,7 @@ These graphs examine the relationship between the job role interests of new code
 ![](New-Coder-Survey-Data-Visualizations/JobRoleInterest_Scatter.png ) 
 
 **Scatterplot**
-![](../New-Coder-Survey-Data-Visualizations/JobRoleInterest_Scatter.png )
+![](New-Coder-Survey-Data-Visualizations/JobRoleInterest_Scatter.png )
 
 ###**Interpretation of the data** 
 

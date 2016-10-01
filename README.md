@@ -5,7 +5,7 @@ Data Visualization derived from Kaggle's New Coder Survey dataset
 These graphs examine the relationship between the job role interests of new coders against their age. In the scatterplot, new coders are also grouped by their desired company size/type. 
 
 **Bar Graph**
-![](/Users/Janel/Dropbox/DataVisualization/DV_Rproject2/02\ Data\ Wrangling/barplot_jobroleinterest.png) 
+![](New-Coder-Survey-Data-Visualizations/JobRoleInterest_Scatter.png ) 
 
 **Scatterplot**
 ![](/Users/Janel/Dropbox/DataVisualization/DV_Rproject2/02\ Data\ Wrangling/JobRoleInterest_Scatter.png)

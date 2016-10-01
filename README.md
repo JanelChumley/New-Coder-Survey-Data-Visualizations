@@ -18,31 +18,32 @@ There are signficantly more coders between the ages of 20 and 35 who want to bec
 
 ###**Data Wrangling Steps**
 
-**Step 1:** 
-Called dplyr's ```select()``` function to remove unwanted columns from dataframe. 
+**Step 1:** Imported csv file
+```df=read.csv("NewCoders2.reformatted.csv ")```
+
+**Step 2**: Called dplyr's ```select()``` function to remove unwanted columns from dataframe. 
 ```
 df %>% dplyr::select(AGE,JOBROLEINTEREST, JOBPREF)
 ```
 
-**Step 2**: Called dplyr's ```filter()``` function to remove null values from data frame.
+**Step 3**: Called dplyr's ```filter()``` function to remove null values from data frame.
 
 ```
  %>%  dplyr::filter(AGE!="null", JOBROLEINTEREST != "null", JOBPREF != "null")
 ```
 
-
-**Step 3**: Called dplyr's ```group_by()``` function to group dataframe by AGE, JOBROLEINTEREST, and JOBPREF attributes.
+**Step 4**: Called dplyr's ```group_by()``` function to group dataframe by AGE, JOBROLEINTEREST, and JOBPREF attributes.
 
 ```
  %>% dplyr::group_by(AGE, JOBROLEINTEREST, JOBPREF)
 ```
 
-**Step 4**: Called dplyr's ```summarize()``` function to summarize the counts in the grouped tabled. 
+**Step 5**: Called dplyr's ```summarize()``` function to summarize the counts in the grouped tabled. 
 ```
  %>% dplyr::summarize(count = n())%>%dplyr::arrange(desc(count))
 ```
 
-**Step 5**: Reordered rows in grouped table using dplyr's ```arrange()``` function.
+**Step 6**: Reordered rows in grouped table using dplyr's ```arrange()``` function.
 ```
  %>% dplyr::arrange(desc(count))
 ```

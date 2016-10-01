@@ -12,7 +12,7 @@ https://www.kaggle.com/freecodecamp/2016-new-coder-survey-
 
 **Scatterplot**
 
-In this scatterplot, new coders are also grouped by their desired company size/type. 
+New coders are also grouped by their desired company size/type in this scatterplot. 
 ![](JobRoleInterest_Scatter.png )
 
 ###**Interpretation of the data** 

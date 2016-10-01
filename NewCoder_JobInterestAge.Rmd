@@ -1,36 +1,6 @@
 ##**New Coder Job Interest and Age**
 
-These graphs examine the relationship between the job role interests of new coders against their age. In the scatterplot, new coders are also grouped by their desired company size/type. 
-
-First we must import the libraries:
-
-```{r message=FALSE, warning=FALSE, echo=FALSE}
-require("dyplr")
-library(readr)
-require("ggplot2")
-require("ggthemes") 
-
-```
-Next, we must import the dataset:
-```{r message=FALSE, warning=FALSE}
-df=read.csv("NewCoders2.reformatted.csv ")
-```
-####**Job Interest and Age of New Coders**
-
-Summary data on the chosen subset:
-```{r message=FALSE ,warning=FALSE,cache=FALSE,results='hide'}
-job_interest_age <- df %>%
-  dplyr::select(AGE,JOBROLEINTEREST, JOBPREF) %>%
-  dplyr::filter(AGE!="null", JOBROLEINTEREST != "null", JOBPREF != "null")%>%
-  dplyr::group_by(AGE, JOBROLEINTEREST, JOBPREF) %>%
-  dplyr::summarize(count = n())%>%
-  dplyr::arrange(desc(count)) %>%
-  head
-```
-```{r message=FALSE ,warning=FALSE,cache=FALSE}
-job_interest_age
-```
-These graphs examine the relationship between the job role interests of new coders against their age. In the scatterplot, new coders are also grouped by their desired company size/type. 
+These data visualization examine the relationship between the job role interests of new coders against their age. In the scatterplot, new coders are also grouped by their desired company size/type. 
 
 **Bar Graph**
 
@@ -44,38 +14,51 @@ These graphs examine the relationship between the job role interests of new code
 
 There are signficantly more coders between the ages of 20 and 35 who want to become Full-Stack Web Developers relative to their middle to late-aged counterparts. Also, the scatterplot reveals that new millenial coders are more likely to desire employment at a medium-size company or start-up. There appears to be significantly more young coders who desire a career in Front-End Web Development as well. The remaining job role interest categories have a relatively unbiased age distribution.
 
+##**The following steps were taken to produce these data visualization
+**Step 1:** Import the libraries:
 
+```{r message=FALSE, warning=FALSE, echo=FALSE}
+require("dyplr")
+library(readr)
+require("ggplot2")
+require("ggthemes") 
+
+```
+**Step 2**: Import the dataset:
+```{r message=FALSE, warning=FALSE}
+df=read.csv("NewCoders2.reformatted.csv ")
+```
 ###**Data Wrangling Steps**
 
-**Step 1:** 
+**Step 3:** 
 Called dplyr's ```select()``` function to remove unwanted columns from dataframe. 
 ```
 df %>% dplyr::select(AGE,JOBROLEINTEREST, JOBPREF)
 ```
 
-**Step 2**: Called dplyr's ```filter()``` function to remove null values from data frame.
+**Step 4**: Called dplyr's ```filter()``` function to remove null values from data frame.
 
 ```
  %>%  dplyr::filter(AGE!="null", JOBROLEINTEREST != "null", JOBPREF != "null")
 ```
 
 
-**Step 3**: Called dplyr's ```group_by()``` function to group dataframe by AGE, JOBROLEINTEREST, and JOBPREF attributes.
+**Step 5**: Called dplyr's ```group_by()``` function to group dataframe by AGE, JOBROLEINTEREST, and JOBPREF attributes.
 
 ```
  %>% dplyr::group_by(AGE, JOBROLEINTEREST, JOBPREF)
 ```
 
-**Step 4**: Called dplyr's ```summarize()``` function to summarize the counts in the grouped tabled. 
+**Step 6**: Called dplyr's ```summarize()``` function to summarize the counts in the grouped tabled. 
 ```
  %>% dplyr::summarize(count = n())%>%dplyr::arrange(desc(count))
 ```
 
-**Step 5**: Reordered rows in grouped table using dplyr's ```arrange()``` function.
+**Step 7**: Reordered rows in grouped table using dplyr's ```arrange()``` function.
 ```
  %>% dplyr::arrange(desc(count))
 ```
-###Visualization Step
+**Step 8**: Visualization Step
 
 **Bar Graph**: The following ggplot layer was piped to the dataframe:
 

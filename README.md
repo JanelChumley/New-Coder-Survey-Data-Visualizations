@@ -1,7 +1,3 @@
-# New-Coder-Survey-Data-Visualizations
-Source: Kaggle's New Coder Survey dataset
-https://www.kaggle.com/freecodecamp/2016-new-coder-survey- 
-
 ####**Job Interest and Age of New Coders**
 
 These graphs examine the relationship between the job role interests of new coders against their age. In the scatterplot, new coders are also grouped by their desired company size/type. 
@@ -57,3 +53,6 @@ df %>% dplyr::select(AGE,JOBROLEINTEREST, JOBPREF)
 **Scatterplot**: The following ggplot layer was piped to the dataframe:
 ```ggplot(aes(AGE, count, color=JOBROLEINTEREST))  + theme(legend.title = element_text( size = 8)) + scale_color_discrete(name="Job Role Interest")+ geom_point(alpha = 0.7, stat = "identity", position = position_jitter(width=0.5, height= 0.5))+ labs(title='Job Interest of New Coders by Age') + labs(x="Age of New Coder", y= "Count") +facet_wrap(~JOBPREF) + scale_x_discrete(breaks = c(15,25,35,45,55,65))```
 
+
+Source: Kaggle's New Coder Survey dataset
+https://www.kaggle.com/freecodecamp/2016-new-coder-survey- 

@@ -3,12 +3,8 @@
 title: "New Coder Job Interests and Age"
 output: 
     html_document: 
-      toc: true
 ---
 
-```
-{r message=FALSE, warning=FALSE, echo=FALSE}
-```
 require("jsonlite")
 require("RCurl")
 require("dyplr")

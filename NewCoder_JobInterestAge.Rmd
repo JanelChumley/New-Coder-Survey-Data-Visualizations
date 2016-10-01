@@ -1,16 +1,35 @@
+##**New Coder Job Interest and Age**
 
+These graphs examine the relationship between the job role interests of new coders against their age. In the scatterplot, new coders are also grouped by their desired company size/type. 
+
+First we must import the libraries:
 
 ```{r message=FALSE, warning=FALSE, echo=FALSE}
-require("jsonlite")
-require("RCurl")
 require("dyplr")
-require("tidyr")
+library(readr)
 require("ggplot2")
 require("ggthemes") 
 
 ```
+Next, we must import the dataset:
+```{r message=FALSE, warning=FALSE, echo=FALSE}
+df=read.csv("NewCoders2.reformatted.csv ")
+```
 ####**Job Interest and Age of New Coders**
 
+Summary data on the chosen subset:
+```{r message=FALSE ,warning=FALSE,cache=FALSE,results='hide'}
+job_interest_age <- 
+  dplyr::select(AGE,JOBROLEINTEREST, JOBPREF) %>%
+  dplyr::filter(AGE!="null", JOBROLEINTEREST != "null", JOBPREF != "null")%>%
+  dplyr::group_by(AGE, JOBROLEINTEREST, JOBPREF) %>%
+  dplyr::summarize(count = n())%>%
+  dplyr::arrange(desc(count)) %>%
+  head
+```
+```
+{r message=FALSE ,warning=FALSE,cache=FALSE} job_interest_age
+```
 These graphs examine the relationship between the job role interests of new coders against their age. In the scatterplot, new coders are also grouped by their desired company size/type. 
 
 **Bar Graph**

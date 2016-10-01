@@ -17,7 +17,7 @@ In this scatterplot, new coders are also grouped by their desired company size/t
 
 ###**Interpretation of the data** 
 
-There are signficantly more coders between the ages of 20 and 35 who want to become Full-Stack Web Developers relative to their middle to late-aged counterparts. Also, the scatterplot reveals that new millenial coders are more likely to desire employment at a medium-size company or start-up. There appears to be significantly more young coders who desire a career in Front-End Web Development as well. The remaining job role interest categories have a relatively unbiased age distribution.
+There are signficantly more coders between the ages of 20 and 35 who want to become Full-Stack Web Developers relative to their middle to late-aged counterparts. Also, the scatterplot reveals that millennial new coders are more likely to desire employment at a medium-size company or start-up. There appears to be significantly more young coders who desire a career in Front-End Web Development as well. The remaining job role interest categories have a relatively unbiased age distribution.
 
 ###**The following steps were taken to produce these data visualization**
 

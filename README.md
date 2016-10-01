@@ -18,8 +18,7 @@ There are signficantly more coders between the ages of 20 and 35 who want to bec
 
 ###**Data Wrangling Steps**
 
-**Step 1:** Imported csv file
-```df=read.csv("NewCoders2.reformatted.csv ")```
+**Step 1:** Created dataframe with ```df=read.csv("NewCoders2.reformatted.csv ")```
 
 **Step 2**: Called dplyr's ```select()``` function to remove unwanted columns from dataframe. 
 ```

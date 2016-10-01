@@ -6,7 +6,8 @@ output:
       toc: true
 ---
 
-```{r message=FALSE, warning=FALSE, echo=FALSE}
+```
+{r message=FALSE, warning=FALSE, echo=FALSE}
 ```
 require("jsonlite")
 require("RCurl")

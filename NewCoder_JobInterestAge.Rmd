@@ -1,7 +1,8 @@
 ##**New Coder Job Interest and Age using R**
 
 These data visualizations examine the relationship between the job role interests of new coders against their age.
-Datasource: Kaggle's New Coder Survey dataset
+
+Datasource: Kaggle's New Coder Survey dataset:
 https://www.kaggle.com/freecodecamp/2016-new-coder-survey- 
 
 **Bar Graph**

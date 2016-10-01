@@ -27,7 +27,7 @@ require("ggplot2")
 require("ggthemes") 
 
 ```
-**Step 2**: Import the dataset:
+**Step 2**: Import the dataset using ```read.cvs``` function:
 ```{r message=FALSE, warning=FALSE}
 df=read.csv("NewCoders2.reformatted.csv ")
 ```

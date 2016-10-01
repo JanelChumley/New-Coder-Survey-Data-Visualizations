@@ -7,6 +7,7 @@ These graphs examine the relationship between the job role interests of new code
 
 
 **Scatterplot**
+
 In this scatterplot, new coders are also grouped by their desired company size/type. 
 ![](JobRoleInterest_Scatter.png )
 

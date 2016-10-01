@@ -1,12 +1,13 @@
 ##**Job Interest and Age of New Coders Data Visualizations using R**
 
-These graphs examine the relationship between the job role interests of new coders against their age. In the scatterplot, new coders are also grouped by their desired company size/type. 
+These graphs examine the relationship between the job role interests of new coders against their age. 
 
 **Bar Graph**
 ![](barplot_jobroleinterest.png)
 
 
 **Scatterplot**
+In this scatterplot, new coders are also grouped by their desired company size/type. 
 ![](JobRoleInterest_Scatter.png )
 
 ###**Interpretation of the data** 

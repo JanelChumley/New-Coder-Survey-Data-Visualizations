@@ -1,15 +1,3 @@
-
-```{r message=FALSE, warning=FALSE, echo=FALSE}
-require("jsonlite")
-require("RCurl")
-require("dyplr")
-require("tidyr")
-require("ggplot2")
-require("ggthemes") 
-```
-```{r message=FALSE, warning=FALSE, echo=FALSE}
-df=read.csv("../New-Coder-Survey-Data-Visualizations/NewCoders2.reformatted.csv")
-```
 ####**Job Interest and Age of New Coders**
 
 These graphs examine the relationship between the job role interests of new coders against their age. In the scatterplot, new coders are also grouped by their desired company size/type. 

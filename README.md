@@ -4,12 +4,6 @@ Data Visualization derived from Kaggle's New Coder Survey dataset
 
 These graphs examine the relationship between the job role interests of new coders against their age. In the scatterplot, new coders are also grouped by their desired company size/type. 
 
-**Bar Graph**
-![](New-Coder-Survey-Data-Visualizations/JobRoleInterest_Scatter.png ) 
-
-**Scatterplot**
-![](/Users/Janel/Dropbox/DataVisualization/DV_Rproject2/02\ Data\ Wrangling/JobRoleInterest_Scatter.png)
-
 ###**Interpretation of the data** 
 
 There are signficantly more coders between the ages of 20 and 35 who want to become Full-Stack Web Developers relative to their middle to late-aged counterparts. Also, the scatterplot reveals that new millenial coders are more likely to desire employment at a medium-size company or start-up. There appears to be significantly more young coders who desire a career in Front-End Web Development as well. The remaining job role interest categories have a relatively unbiased age distribution.

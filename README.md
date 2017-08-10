@@ -1,4 +1,4 @@
-##**Job Interest and Age of New Coders Data Visualizations using R**
+## **Job Interest and Age of New Coders Data Visualizations using R**
 
 These graphs examine the relationship between the job role interests of new coders against their age. 
 
